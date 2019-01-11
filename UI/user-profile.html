@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IRepoter|Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style-user.css">
+
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="user-profile.html">user profile</a>
+        <a href="view-records.html">View / Edit Records</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div id="box">
+        <div class="left-box">
+            <div class="card">
+                <img src="images/img.jpg" alt="profile picture" style="width:100%">
+                <p><button>change user name</button></p>
+            </div>
+        </div>
+
+        <div class="right-box">
+            <center>
+                <h1>Post Incidents</h1>
+                <form id="postincident">
+                    <label>
+                    <select>
+                        <option id="type" value="Redflag">Redflag</option>
+                        <option id="type" value="Intervention">Intervention</option>
+                      </select>
+                    </label>
+                    <input type="text" name="location" id="location" placeholder="location Eg 14N,78E">
+                    <input type="text" name="Images" id="Images" placeholder="Optional Images">
+                    <input type="text" name="Videos" id="Videos" placeholder="Optional Videos">
+                    <input type="text" name="comment" id="comment" placeholder="Enter comments">
+                    <label for="fileupload"> Select an image or video file to upload</label>
+                    <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                    <br>
+                    <input type="submit" value="Post Record">
+                </form>
+
+            </center>
+        </div>
+
+    </div>
+    </div>
+  
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+</body>
+
+</html>
