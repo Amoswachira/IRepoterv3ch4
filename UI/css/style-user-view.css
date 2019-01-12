@@ -123,6 +123,9 @@ button {
     font-size: 18px;
 }
 
+.button1 {
+    background-color: #f70e06;
+  }
 a {
     text-decoration: none;
     font-size: 22px;

@@ -1,4 +1,31 @@
-// getall
+// delete by id
+const url = "https://irepoterv2final.herokuapp.com/api/v2/intervention";
+
+function deleteData(item, url) {
+  let token = localStorage.getItem("token");
+  t = token;
+  return fetch(url + "/" + item, {
+    method: "DELETE",
+    headers: {
+      Authorization: "Bearer " + t,
+      "Content-type": "application/json"
+    }
+  })
+    .then(response => response.json())
+    .then(incidentsData => {
+      console.log(incidentsData);
+      if (incidentsData.status == 200) {
+        alert("Intervention record has been deleted");
+        window.location = "view-records.html";
+      } else {
+        alert(incidentsData.message);
+        alert(incidentsData.msg);
+        window.location = "user-profile.html";
+      }
+    });
+}
+
+// get all incidents
 document
   .getElementById("getallUserincidents")
   .addEventListener("click", getallUserincidents);
@@ -24,7 +51,7 @@ function getallUserincidents() {
           let status = incidents[i].status;
           let type = incidents[i].type;
           let comment = incidents[i].comment;
-
+          let item = incidents[i].id;
           output += `
            <tr>
                 <th>${id}</th>
@@ -34,11 +61,10 @@ function getallUserincidents() {
                 <th>${type}</th>
                 <th>${comment}</th>
                 <td><a href="edit-records.html"><button>EDIT</button></a></td>
-                <td><input type="submit" value="DELETE"></td>
+                <td id="delt"><button class="button1" onclick="deleteData(${item},url)">DELETE</button></td>
              </tr>
              `;
         }
-
         document.getElementById("output").innerHTML = output;
       } else {
         alert(incidentsData.message);
