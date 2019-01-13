@@ -1,5 +1,5 @@
 // getall
-document.getElementById("users").addEventListener("click", users);
+document.addEventListener("DOMContentLoaded", users);
 
 function users() {
   let token = localStorage.getItem("token");
