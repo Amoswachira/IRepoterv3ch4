@@ -26,9 +26,7 @@ function deleteData(item, url) {
 }
 
 // get all incidents
-document
-  .getElementById("getallUserincidents")
-  .addEventListener("click", getallUserincidents);
+document.addEventListener("DOMContentLoaded", getallUserincidents);
 
 function getallUserincidents() {
   let token = localStorage.getItem("token");

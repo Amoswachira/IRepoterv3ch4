@@ -21,7 +21,7 @@
         <a href="index.html">Home</a>
         <a class="active" href="admin-area.html">Admin</a>
         <a href="view-all-users.html">VIEW ALL USER INCIDENTS</a>
-        <a href="index.html">Logout</a>
+        <button id="logout">Logout</button>
     </div>
     <div id="box">
         <div class="left-box">
@@ -44,7 +44,7 @@
                     <button><a href="view-all-users.html">Resolve / Reject / Under investigation</a></button>
                     <br>
                     <br>
-                    <button id="users"><a href="#">VIEW REGISTERED USERS</a></button>
+                    <button id="users"><a href="#">REGISTERED USERS</a></button>
                 </form>
                 <div style="overflow-x:auto;"><table id="output"></table></div>
             </center>
@@ -53,6 +53,7 @@
     </div>
     </div>
     <script src="js/viewusers.js"></script>
+    <script src="js/logout.js"></script>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

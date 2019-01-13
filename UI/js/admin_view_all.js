@@ -86,7 +86,7 @@ function Adminresolv(item, urll) {
     });
 }
 // getall
-document.getElementById("adminviewall").addEventListener("click", adminviewall);
+document.addEventListener("DOMContentLoaded", adminviewall);
 
 function adminviewall() {
   let token = localStorage.getItem("token");
