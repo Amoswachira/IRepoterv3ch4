@@ -48,16 +48,18 @@ function getallUserincidents() {
           let createdon = incidents[i].createdon;
           let status = incidents[i].status;
           let type = incidents[i].type;
+          let location = incidents[i].location;
           let comment = incidents[i].comment;
           let item = incidents[i].id;
           output += `
            <tr>
-                <th>${id}</th>
-                <th>${createdby}</th>
-                <th>${createdon}</th>
-                <th>${status}</th>
-                <th>${type}</th>
-                <th>${comment}</th>
+                <td>${id}</td>
+                <td>${createdby}</td>
+                <td>${createdon}</td>
+                <td>${status}</td>
+                <td>${type}</td>
+                <td>${location}</td>
+                <td>${comment}</td>
                 <td><a href="edit-records.html"><button>EDIT</button></a></td>
                 <td id="delt"><button class="button1" onclick="deleteData(${item},url)">DELETE</button></td>
              </tr>
