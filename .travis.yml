@@ -7,6 +7,9 @@ cache:
     - ~/.npm
     - ~/.cache
 install:
+  - npm install codecov --save-dev
   - npm ci
 script:
   - $(npm bin)/cypress run --record
+after_success:
+  - ./node_modules/.bin/codecov
