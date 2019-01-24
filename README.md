@@ -1,6 +1,6 @@
-# IRepoterv3ch4
+# IRepoterv3ch4 [![Build Status](https://travis-ci.org/Amoswachira/IRepoterv3ch4.svg?branch=ch-add-minimal-tests-163221112)](https://travis-ci.org/Amoswachira/IRepoterv3ch4)
 
-connect back end Api to front end UI
+Connect IRepoter v2 back end Api to front end UI
 
 ## How to install and Run tests with cypress
 
