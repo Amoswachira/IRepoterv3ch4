@@ -1,0 +1,23 @@
+{
+  "name": "irepoterv3ch4",
+  "version": "1.0.0",
+  "description": "connect back end Api to front end UI",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^3.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amoswachira/IRepoterv3ch4.git"
+  },
+  "author": "Amos wachira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amoswachira/IRepoterv3ch4/issues"
+  },
+  "homepage": "https://github.com/Amoswachira/IRepoterv3ch4#readme"
+}
