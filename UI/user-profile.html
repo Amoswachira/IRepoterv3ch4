@@ -37,6 +37,12 @@
         <div class="right-box">
             <center>
                 <h1>Post Incidents</h1>
+                <h1>choose the location</h1>
+                <div id="map"></div>
+                <br>
+                Lat: <input type="text" id="lat" /> Lon: <input type="text" id="lon" />
+                <br>
+                <br>
                 <form id="postincident">
                     <label>
                     <select>
@@ -44,7 +50,7 @@
                         <option id="type" value="Intervention">Intervention</option>
                       </select>
                     </label>
-                    <input type="text" name="location" id="location" placeholder="location Eg 14N,78E">
+                    <input type="text" name="location" id="location" placeholder="Enter the above auto generated coodinates separated by a comma">
                     <input type="text" name="Images" id="Images" placeholder="Optional Images">
                     <input type="text" name="Videos" id="Videos" placeholder="Optional Videos">
                     <input type="text" name="comment" id="comment" placeholder="Enter comments">
@@ -61,6 +67,12 @@
     </div>
     <script src="js/postincidents.js"></script>
     <script src="js/logout.js"></script>
+    <script src="js/googlemaps.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEYa3T1BWrO6P0gvilqGJFmYORmHwdSwo&callback=initMap"
+    ></script>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
