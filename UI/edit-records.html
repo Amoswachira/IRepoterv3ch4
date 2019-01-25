@@ -40,6 +40,12 @@
         <div class="right-box">
             <center>
                 <h1>Update location and comments</h1>
+                <h1>choose the location</h1>
+                <div id="map"></div>
+                <br>
+                Lat: <input type="text" id="lat" /> Lon: <input type="text" id="lon" />
+                <br>
+                <br>
                 <div id="output"style="overflow-x:auto;">
                         
                 </div>
@@ -52,6 +58,12 @@
     </div>
     <script src="js/logout.js"></script>
     <script src="js/update.js"></script>
+    <script src="js/googlemaps.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEYa3T1BWrO6P0gvilqGJFmYORmHwdSwo&callback=initMap"
+    ></script>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

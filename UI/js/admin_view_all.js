@@ -107,6 +107,7 @@ function adminviewall() {
           let createdby = incidents[i].createdby;
           let status = incidents[i].status;
           let type = incidents[i].type;
+          let location = incidents[i].location;
           let comment = incidents[i].comment;
           let item = incidents[i].id;
 
@@ -116,6 +117,7 @@ function adminviewall() {
                 <th>${createdby}</th>
                 <th>${status}</th>
                 <th>${type}</th>
+                <th>${location}</th>
                 <th>${comment}</th>
                 <td><button onclick="Adminresolv(${item},urll)">RESOLVE</button></td>
                 <td><button class="button2" onclick="Adminunderinvestigation(${item},url_under)">UNDER INVESTIGATION</button></td>
